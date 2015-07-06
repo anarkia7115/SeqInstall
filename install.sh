@@ -39,6 +39,8 @@ echo "boost" >> $HOME/install/log
 
 # LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/usr/lib64:/usr/local/lib/:$LD_LIBRARY_PATH
+echo "export LD_LIBRARY_PATH=/usr/lib64:/usr/local/lib/:$LD_LIBRARY_PATH" >> ~/.bashrc
+source ~/.bashrc
 echo "LD_LIBRARY_PATH done" >> $HOME/install/log
 
 # Split
