@@ -11,12 +11,17 @@ set -e
 #7. install samtools
 #   make snp
 
+
 export HOME=/home/ec2-user
 export APP=$HOME/applications
 mkdir $APP
 export DOW=$HOME/Downloads
 
 date >> ./log
+
+# get
+cd $HOME/install/
+./get.sh
 
 # g++
 sudo yum install gcc-c++
