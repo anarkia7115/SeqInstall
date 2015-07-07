@@ -27,6 +27,11 @@ cd $HOME/install/
 sudo yum install gcc-c++
 echo "g++ done" >> $HOME/install/log
 
+# mysql
+cd $HOME/install/
+./install_mysql.sh
+echo "mysql done" >> $HOME/install/log
+
 # zlib
 cd $HOME/install/
 ./install_zlib.sh
