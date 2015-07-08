@@ -21,6 +21,7 @@ date >> ./log
 
 # get
 cd $HOME/install/
+chmod ./*.sh
 ./get.sh
 
 # g++
