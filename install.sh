@@ -14,10 +14,14 @@ set -e
 
 export HOME=/home/ec2-user
 export APP=$HOME/applications
-mkdir $APP
 export DOW=$HOME/Downloads
 
 date >> ./log
+
+# mkdir
+mkdir $APP
+mkdir $APP/align
+mkdir $APP/snp
 
 # get
 cd $HOME/install/
