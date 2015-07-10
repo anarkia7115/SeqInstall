@@ -24,7 +24,7 @@ mkdir $APP/snp
 
 # get
 cd $HOME/install/
-chmod ./*.sh
+chmod u+x ./*.sh
 ./get.sh
 
 # g++
