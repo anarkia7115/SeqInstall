@@ -12,7 +12,6 @@ set -e
 #   make snp
 
 
-export HOME=/home/ec2-user
 export APP=$HOME/applications
 export DOW=$HOME/Downloads
 
@@ -82,5 +81,8 @@ echo "samtools done" >> $HOME/install/log
 cd $HOME/install/
 ./make_snp.sh
 echo "snp done" >> $HOME/install/log
+
+# mkdir for snp result
+mkdir ~/sequencing-result/
 
 date >> ./log
