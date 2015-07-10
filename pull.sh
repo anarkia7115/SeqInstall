@@ -1,5 +1,7 @@
 #!/bin/bash
 
-aws s3 cp s3://gcbibucket/install ~/install/ --recursive
+MNT=/mnt
 
-sh ~/install/install.sh
+aws s3 cp s3://gcbibucket/install $MNT/install/ --recursive
+
+sh $MNT/install/install.sh
