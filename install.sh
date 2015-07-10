@@ -28,7 +28,7 @@ chmod u+x ./*.sh
 ./get.sh
 
 # g++
-sudo yum install gcc-c++
+sudo yum -y install gcc-c++
 echo "g++ done" >> $MNT/install/log
 
 # mysql
