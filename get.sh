@@ -2,6 +2,7 @@
 
 mkdir -p ~/Downloads
 aws s3 cp s3://gcbibucket/align/hg19.fa ~/applications/align/
+aws s3 cp s3://gcbibucket/snp/hsa_bwa_hg19_header.fa.fai ~/applications/snp/
 aws s3 cp s3://gcbibucket/jdk-7u79-linux-x64.tar.gz ~/Downloads/
 aws s3 cp s3://gcbibucket/MySQL-server-5.6.25-1.el7.x86_64.rpm ~/Downloads/
 aws s3 cp s3://gcbibucket/Split.tar.gz ~/Downloads/
