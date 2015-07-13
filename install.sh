@@ -32,9 +32,9 @@ sudo yum -y install gcc-c++
 echo "g++ done" >> $MNT/install/log
 
 # mysql
-cd $MNT/install/
-./install_mysql.sh
-echo "mysql done" >> $MNT/install/log
+#cd $MNT/install/
+#./install_mysql.sh
+#echo "mysql done" >> $MNT/install/log
 
 # zlib
 cd $MNT/install/
@@ -58,14 +58,14 @@ cd $MNT/install/
 echo "Spliet done" >> $MNT/install/log
 
 # bwa
-cd $MNT/install/
-./install_bwa.sh
-echo "bwa done" >> $MNT/install/log
+#cd $MNT/install/
+#./install_bwa.sh
+#echo "bwa done" >> $MNT/install/log
 
 # make align
-cd $MNT/install/
-./make_align.sh
-echo "align done" >> $MNT/install/log
+#cd $MNT/install/
+#./make_align.sh
+#echo "align done" >> $MNT/install/log
 
 # install ncurses
 cd $MNT/install/
@@ -73,14 +73,14 @@ cd $MNT/install/
 echo "ncurses done" >> $MNT/install/log
 
 # samtools
-cd $MNT/install/
-./install_samtools.sh
-echo "samtools done" >> $MNT/install/log
+#cd $MNT/install/
+#./install_samtools.sh
+#echo "samtools done" >> $MNT/install/log
 
 # make snp
-cd $MNT/install/
-./make_snp.sh
-echo "snp done" >> $MNT/install/log
+#cd $MNT/install/
+#./make_snp.sh
+#echo "snp done" >> $MNT/install/log
 
 # mkdir for snp result
 mkdir $MNT/sequencing-result/
