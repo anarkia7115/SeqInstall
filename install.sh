@@ -31,7 +31,8 @@ mkdir -p /gcbi/logs/sequencing-analyze/
 mkdir -p /gcbi/storage/
 ln -s $APP/align/hg19 /gcbi/storage/sequencing-ref
 
-
+# tar software
+tar -zxf $DOW/software.tar.gz -C $APP
 
 # get
 cd $MNT/install/
@@ -84,9 +85,9 @@ cd $MNT/install/
 echo "ncurses done" >> $MNT/install/log
 
 # samtools
-#cd $MNT/install/
-#./install_samtools.sh
-#echo "samtools done" >> $MNT/install/log
+cd $MNT/install/
+./install_samtools.sh
+echo "samtools done" >> $MNT/install/log
 
 # make snp
 #cd $MNT/install/
