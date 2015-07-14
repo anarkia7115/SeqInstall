@@ -22,6 +22,17 @@ mkdir $APP
 mkdir $APP/align
 mkdir $APP/snp
 
+# mkdir for snp
+sudo mkdir /gcbi
+sudo mkdir /application
+sudo chown -R $USER:$USER /gcbi
+sudo chown -R $USER:$USER /application
+mkdir -p /gcbi/logs/sequencing-analyze/
+mkdir -p /gcbi/storage/
+ln -s $APP/align/hg19 /gcbi/storage/sequencing-ref
+
+
+
 # get
 cd $MNT/install/
 chmod u+x ./*.sh

@@ -6,4 +6,4 @@ cd $APP/snp/samtools-0.1.19
 
 make
 
-
+mv $APP/snp/samtools-0.1.19 /application/
