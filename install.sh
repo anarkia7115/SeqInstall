@@ -14,11 +14,13 @@ set -e
 export MNT=/mnt
 export APP=$MNT/applications
 export DOW=$MNT/Downloads
-
+cd $MNT/install/
 date >> ./log
+df -h
 
 # mkdir
 mkdir $APP
+mkdir $DOW
 mkdir $APP/align
 mkdir $APP/snp
 

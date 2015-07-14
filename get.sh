@@ -1,9 +1,6 @@
 #!/bin/bash
 
 
-mkdir -p $DOW
-pwd
-df -h
 aws s3 cp s3://gcbibucket/align/hg19/ $APP/align/hg19/ --recursive
 aws s3 cp s3://gcbibucket/snp/hsa_bwa_hg19_header.fa.fai $APP/snp/
 aws s3 cp s3://gcbibucket/snp/bam_readfirstline.c $APP/snp/
