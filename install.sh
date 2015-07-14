@@ -33,13 +33,13 @@ mkdir -p /gcbi/logs/sequencing-analyze/
 mkdir -p /gcbi/storage/
 ln -s $APP/align/hg19 /gcbi/storage/sequencing-ref
 
-# tar software
-tar -zxf $DOW/software.tar.gz -C $APP
-
 # get
 cd $MNT/install/
 chmod u+x ./*.sh
 ./get.sh
+
+# tar software
+tar -zxf $DOW/software.tar.gz -C $APP
 
 # g++
 sudo yum -y install gcc-c++
